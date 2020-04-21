@@ -14,9 +14,6 @@ exports.do = functions.https.onRequest((req,res) => {
     }
     rp({
       uri: req.query["get"],
-      qs: {
-        format: 'json'
-      },
       headers: {
         'User-Agent': 'Request-Promise',
         'Connection': 'keep-alive'
